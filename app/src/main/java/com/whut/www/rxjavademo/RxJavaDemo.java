@@ -15,7 +15,6 @@ import io.reactivex.functions.Consumer;
  */
 
 public class RxJavaDemo {
-  static final   String TAG="RxJavaDemo";
     public static void main(String args[]){
         Flowable.just("Hello RxJava").subscribe(System.out::println);
         //创建一个上游 Observable：
@@ -52,7 +51,7 @@ public class RxJavaDemo {
         };
         //建立连接
         observable.subscribe(observer);
-        Flowable.just("Hello world")
+        Flowable.just("Hello RxJava")
                 .subscribe(new Consumer<String>() {
                     @Override public void accept(String s) {
                         System.out.println(s);
