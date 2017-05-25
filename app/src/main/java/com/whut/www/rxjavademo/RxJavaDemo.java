@@ -13,11 +13,6 @@ import io.reactivex.functions.Consumer;
  * 真正的速度是看不见的 !
  * Today is toady , we will go !
  */
-
-
-
-
-
 public class RxJavaDemo {
     public static void main(String args[]){
         Flowable.just("Hello RxJava").subscribe(System.out::println);
